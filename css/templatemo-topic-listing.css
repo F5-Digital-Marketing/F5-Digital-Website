@@ -110,7 +110,7 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
 }
-.p-2{
+.pc-2{
   color: var(--dark-color) !important;
 
 }
@@ -166,6 +166,11 @@ strong {
   padding-right: 200px;
   padding-left: 200px;
   padding-bottom: 50px;
+}
+#section_2{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
 
 .section-bg {
