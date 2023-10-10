@@ -4,27 +4,29 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #e4f2ff;
+  --white-color:                  #e5f2fe;
   --primary-color:                #00C6D7;
-  --secondary-color:              #0b0518;
-  --section-bg-color:             #f0f8ff;
+  --secondary-color:              #0A0E19;
+  --section-bg-color:             #e5f2fe;
   --custom-btn-bg-color:          #00C6D7;
-  --custom-btn-bg-hover-color:    #212134E6;
-  --dark-color:                   #0b0518;
+  --custom-btn-bg-hover-color:    #0A0E19;
+  --dark-color:                   #0d0a19;
   --p-color:                      #ffffff;
+  --p-color-2:                    #78828E;
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
-  --body-font-family:             'Heebo', sans-serif;
+  --body-font-family:             'Ubuntu', sans-serif;
   --title-font-family:            'Ubuntu', sans-serif;
+  --text-font-family:             'Heebo', sans-serif;
 
   --h1-font-size:                 55px;
   --h2-font-size:                 42px;
   --h3-font-size:                 32px;
-  --h4-font-size:                 27px;
+  --h4-font-size:                 23px;
   --h5-font-size:                 26px;
   --h6-font-size:                 24px;
-  --p-font-size:                  20px;
+  --p-font-size:                  19px;
   --menu-font-size:               14px;
   --btn-font-size:                18px;
   --copyright-font-size:          16px;
@@ -34,7 +36,7 @@
   --border-radius-small:          10px;
 
   
-  --font-weight-light:            300;
+  --font-weight-light:            200;
   --font-weight-normal:           400;
   --font-weight-medium:           500;
   --font-weight-semibold:         600;
@@ -82,9 +84,9 @@ h2 {
 h3 {
   font-size: var(--h3-font-size);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(905deg,#0c6977 20%,#08f8f5 40%,#08f8f5 20%);
+  -webkit-background-clip: text;
+  background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #0A0E19 100%);
 }
 
 
@@ -107,21 +109,22 @@ h6 {
 
 p {
   color: var(--p-color);
+  font-family: var(--text-font-family);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
 }
 .pc-2{
-  color: var(--dark-color) !important;
+  color: var(--p-color-2) !important;
 
 }
 .footer-p{
-  font-size: 12px;
+  font-size: 8px !important;
 }
 
 ul li {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
 }
 
 a, 
@@ -149,7 +152,7 @@ strong {
   -webkit-text-fill-color: transparent;
 
   -webkit-background-clip: text;
-  background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #13092b 75%, #0b0518 100%);
+  background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #0A0E19 100%);
 }
 
 
@@ -167,11 +170,29 @@ strong {
   padding-left: 200px;
   padding-bottom: 50px;
 }
+
+#section_1{
+  border-radius: 0 0 60px 60px;
+  padding-bottom: 100px;
+  gap: 100px;
+}
+
 #section_2{
   padding-top: 50px;
   padding-bottom: 50px;
 
+  padding-bottom: 100px;
+  gap: 100px;
 }
+
+#section_3{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 60px 60px 0 0;
+  padding-bottom: 100px;
+  gap: 100px;
+}
+
 
 .section-bg {
   background-image: url('images/Prancheta 1.pn');
@@ -195,22 +216,33 @@ strong {
 }
 
 .section-overlay {
-  background: radial-gradient(circle at 0% 61%,#0b0518, #361562, rgba(28,13,52,1), #1c0d34);
+  background: radial-gradient(circle at 0% 61%,#0b0518, #0b1225, #12042957);
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   width: 100%;
   height: 100%;
-  opacity: 0.85;
+  opacity: 1.0;
 }
+.section-overlay-2 {
+  background: radial-gradient(ellipse at 51% 60%,#0d0a19ad, #0D0A19, #0d0a19);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
 
 .section-overlay + .container {
   position: relative;
 }
 
 .tab-content {
-  background-color: var(--white-color);
+  background-color: var(--dark-color);
   border-radius: var(--border-radius-medium);
 }
 
@@ -224,7 +256,7 @@ strong {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  color: var(--dark-color);
+  color: var(--white-color);
   font-family: var(--title-font-family);
   font-size: 22px;
   font-weight: var(--font-weight-medium);
@@ -611,11 +643,11 @@ strong {
 }
 
 .custom-block-image {
-  display: block;
+  justify-content: center;
+  display: flex;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-top: 35px;
+  height: 100px;
+  object-fit: contain;
 }
 .custom-block-imag-mock {
   display: block;
@@ -655,7 +687,7 @@ border-radius: var(--border-radius-medium);
 display: block;
 margin-left: 250px;
 width: auto;
-z-index: 1;
+z-index: 0;
 opacity: 40%;
 }
 
@@ -1444,14 +1476,14 @@ blockquote {
 }
 
 .body-slider {
-  margin-top: 0;
+  margin-top: -300px;
   display: grid;
   place-content: center;
 }
 
 @media screen and (max-width: 991px) {
   .body-slider {
-    margin-top: -50px;
+    margin-top: -150px;
     margin-bottom: -100px;
     display: grid;
     place-content: center;
@@ -1459,12 +1491,7 @@ blockquote {
 }
 
 @media screen and (max-width: 480px) {
-  .body-slider {
-    margin-top: -50px;
-    margin-bottom: -100px;
-    display: grid;
-    place-content: center;
-  }
+
 
 }
 

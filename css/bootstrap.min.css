@@ -4262,7 +4262,6 @@ fieldset:disabled .btn {
     --bs-nav-tabs-link-active-color: #ffffff00;
     --bs-nav-tabs-link-active-bg: #ffffff00;
     --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
-    border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color)
 }
 
 .nav-tabs .nav-link {
@@ -8098,7 +8097,7 @@ fieldset:disabled .btn {
 
 .d-flex-1 {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
 
@@ -8572,6 +8571,9 @@ fieldset:disabled .btn {
 .order-last {
     order: 6 !important
 }
+.z-index-99{
+    z-index: 999999 !important;
+}
 
 .m-0 {
     margin: 0 !important
@@ -8822,6 +8824,12 @@ fieldset:disabled .btn {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
+    .d-flex-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
 
 }
 
@@ -8859,7 +8867,7 @@ fieldset:disabled .btn {
 }
 
 .px-5 {
-    padding-right: 10rem !important;
+    padding-right: 10rem;
     padding-left: 10rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -9290,11 +9298,9 @@ fieldset:disabled .btn {
 }
 
 .bg-danger {
-    background: rgba(14, 33, 52, 0.41);
+    background: var(--dark-color);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.5px);
-    -webkit-backdrop-filter: blur(9.5px);
     border: 1px solid var(--primary-color);
     }
 
