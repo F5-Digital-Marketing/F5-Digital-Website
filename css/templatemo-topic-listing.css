@@ -1345,8 +1345,8 @@ blockquote {
     padding-bottom: 0;
   }
   .section-padding-LD {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-bottom: 50px;
   }
   .custom-block-image-2{
@@ -1376,11 +1376,6 @@ blockquote {
 
   h5 {
     font-size: 20px;
-  }
-  .section-padding-LD {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
   }
   .sm-sm-custom{
     margin-top: -3rem;
