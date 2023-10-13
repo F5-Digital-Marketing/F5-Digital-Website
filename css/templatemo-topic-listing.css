@@ -83,10 +83,9 @@ h2 {
 
 h3 {
   font-size: var(--h3-font-size);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #00ffe3 20%, #4e90e0 80%, 10%, #4e90e0 80%);
   -webkit-background-clip: text;
-  background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #0A0E19 100%);
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -1779,17 +1778,6 @@ blockquote {
   left: 3vw;
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
-}
-.carousel--progress-bar {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  transform: scaleX(0);
-  transform-origin: 0% 0%;
 }
 
 @font-face {
