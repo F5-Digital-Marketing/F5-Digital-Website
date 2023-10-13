@@ -45,8 +45,24 @@
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
+  width: 100VW;
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #212134;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #00C6D7
+}
+
 
 #projetospg{
   background-color: var(--dark-color);
@@ -85,7 +101,7 @@ h3 {
   font-size: var(--h3-font-size);
   background: linear-gradient(to right, #00ffe3 20%, #4e90e0 80%, 10%, #4e90e0 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
 }
 
 
@@ -147,11 +163,9 @@ a:hover {
 
 b {
   font-weight: var(--font-weight-bold);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  background: linear-gradient(to right, #00C6D7 20%, #4e90e0 80%, 10%, #4e90e0 80%);
   -webkit-background-clip: text;
-  background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #0A0E19 100%);
+  -webkit-text-fill-color: transparent;
 }
 
 strong{
@@ -186,8 +200,7 @@ hr{
 
 #section_1{
   border-radius: 0 0 60px 60px;
-  padding-bottom: 100px;
-  gap: 100px;
+  padding-bottom: 250px;
 }
 
 #section_2{
@@ -208,11 +221,8 @@ hr{
 
 
 .section-bg {
-  background-image: url('images/Prancheta 1.pn');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+
+
 }
 .section-bg-2{
   background-color: var(--dark-color);
@@ -580,10 +590,15 @@ hr{
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/Prancheta 1.pn');
+  background-image: url('../images/Prancheta 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   background-color: var(--dark-color);
   position: relative;
   overflow: hidden;
+  height: max-content;
   padding-top: 250px;
   padding-bottom: 150px;
 }
@@ -683,7 +698,12 @@ hr{
 .custom-block-overlay {
   height: 250px;
 }
-
+@media screen and (max-width: 991px) {
+  .custom-block-overlay {
+    height: 320px;
+  } 
+  
+}
 .custom-block-overlay > a {
   height: 100%;
 }
@@ -1712,86 +1732,5 @@ blockquote {
 }
 
 /*--------- svg -------text*/
-
-.carousel {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.carousel {
-  width: 100%;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.carousel.dragging {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-.carousel--wrap {
-  white-space: nowrap;
-}
-.carousel--item {
-  display: inline-block;
-  width: 30vw;
-  padding: 3vw;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.carousel--item figure {
-  position: relative;
-  z-index: 1;
-  display: block;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-.carousel--item figure img {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: middle;
-  transform-origin: center;
-}
-.carousel--item h2 {
-  position: absolute;
-  z-index: 1;
-  bottom: 1.8vw;
-  font-size: 6vw;
-  bottom: 1vw;
-  color: #fff;
-}
-.carousel--progress {
-  position: fixed;
-  z-index: 2;
-  pointer-events: none;
-  bottom: 2vw;
-  width: 20vw;
-  left: 3vw;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-@font-face {
-
-  font-weight: inherit;
-  font-style: inherit;
-}
-
-@media screen and (max-width: 991px) {
-  .carousel{
-    transform: scale(3.5)
-  }
-  }
-
-
 
  
