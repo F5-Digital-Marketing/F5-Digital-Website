@@ -6,13 +6,13 @@
 :root {
   --white-color:                  #e5f2fe;
   --primary-color:                #00C6D7;
-  --secondary-color:              #0A0E19;
+  --secondary-color:              #0a0e1a;
   --section-bg-color:             #e5f2fe;
   --custom-btn-bg-color:          #00C6D7;
-  --custom-btn-bg-hover-color:    #0A0E19;
-  --dark-color:                   #0d0a19;
-  --p-color:                      #ffffff;
-  --p-color-2:                    #78828E;
+  --custom-btn-bg-hover-color:    #0a0e1a;
+  --dark-color:                   #0a0e1a;
+  --p-color:                      #e4e4e4;
+  --p-color-2:                    #444649;
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
@@ -26,7 +26,7 @@
   --h4-font-size:                 23px;
   --h5-font-size:                 26px;
   --h6-font-size:                 24px;
-  --p-font-size:                  19px;
+  --p-font-size:                  18px;
   --menu-font-size:               14px;
   --btn-font-size:                18px;
   --copyright-font-size:          16px;
@@ -112,6 +112,7 @@ p {
   font-family: var(--text-font-family);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
+  line-height: 1.8;
 }
 .pc-2{
   color: var(--p-color-2) !important;
@@ -145,14 +146,22 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-b,
-strong {
+b {
   font-weight: var(--font-weight-bold);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
   -webkit-background-clip: text;
   background-image: radial-gradient(circle at 41.36% 56.05%, #3afeff 0, #35afca 25%, #53bcf2 50%, #0A0E19 100%);
+}
+
+strong{
+  font-weight: 200;
+  line-height: 1.8rem;
+  text-decoration: underline var(--custom-btn-bg-color);
+}
+hr{
+  color: var(--custom-btn-bg-color);
 }
 
 
@@ -168,6 +177,11 @@ strong {
 .section-padding-LD {
   padding-right: 200px;
   padding-left: 200px;
+  padding-bottom: 50px;
+}
+.section-padding-LD-2 {
+  padding-right: 50px;
+  padding-left: 50px;
   padding-bottom: 50px;
 }
 
@@ -226,7 +240,7 @@ strong {
   opacity: 1.0;
 }
 .section-overlay-2 {
-  background: radial-gradient(ellipse at 51% 60%,#0d0a19ad, #0D0A19, #0d0a19);
+  background: radial-gradient(ellipse at 51% 60%,#0d0a199d,#0a0e1a, #0a0e1a);
   position: absolute;
   top: 0;
   left: 0;
@@ -668,7 +682,7 @@ strong {
 }
 
 .custom-block-overlay {
-  height: 315px;
+  height: 250px;
 }
 
 .custom-block-overlay > a {
@@ -697,7 +711,7 @@ opacity: 40%;
   top: 0;
   right: 0;
   left: 0;
-  padding: 35PX;
+  padding: 40PX;
 }
 
 .social-share {
@@ -1038,8 +1052,8 @@ blockquote {
 }
 
 .faq-section .accordion-button {
-  font-size: var(--h6-font-size);
-  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
 }
 
 .faq-section .accordion-item:first-of-type .accordion-button {
@@ -1055,7 +1069,7 @@ blockquote {
 .faq-section .accordion-body {
   color: var(--p-color);
   font-size: var(--btn-font-size);
-  line-height: 40px;
+  line-height: 30px;
 }
 
 /*---------------------------------------
@@ -1131,7 +1145,7 @@ blockquote {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  border-bottom: 10px solid var(--secondary-color);
+  border-bottom: 10px solid var(--custom-btn-bg-color);;
   position: relative;
 }
 
@@ -1144,8 +1158,9 @@ blockquote {
   height: 0;
   border-style: solid;
   border-width: 0 0 200px 200px;
-  border-color: transparent transparent var(--secondary-color) transparent;
+  border-color: transparent transparent var(--custom-btn-bg-color) transparent;
   pointer-events: none;
+  z-index: 0;
 }
 
 .site-footer-title {
@@ -1206,6 +1221,7 @@ blockquote {
 .copyright-text {
   font-size: var(--copyright-font-size);
   text-align: center;
+
 }
 
 
@@ -1382,8 +1398,11 @@ blockquote {
   }
   .custom-block-image-2{
     margin-left: 150px;
-
-
+  }
+  .section-padding-LD {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
   }
   
 }
@@ -1427,7 +1446,7 @@ blockquote {
 .slider > img {
   grid-area: 1/1;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   animation: r var(--d)  infinite;
 }
 
@@ -1471,7 +1490,7 @@ blockquote {
 }
 
 .body-slider {
-  margin-top: -300px;
+  margin-top: -200px;
   display: grid;
   place-content: center;
 }
@@ -1632,6 +1651,7 @@ blockquote {
 }
 
 .btn {
+
   overflow: visible;
   margin: 0;
   padding: 0;
@@ -1646,8 +1666,8 @@ blockquote {
   text-transform: uppercase;
   padding: 16px 36px 22px;
   background-color: #fff;
-  color: #666;
-  border: 2px solid #666;
+  color: #00C6D7;
+  border: 2px solid #0A0E19;
   border-radius: 6px;
   margin-bottom: 16px;
   transition: all 0.5s ease;
@@ -1665,17 +1685,17 @@ blockquote {
   display: block;
   height: 7px;
   width: 100%;
-  background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(45deg, #00C6D7, #00C6D7 1px, transparent 2px, transparent 5px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-top: 1px solid #666;
+  border-top: 1px solid #0A0E19;
   position: absolute;
   left: 0;
   bottom: 0;
   background-size: 7px 7px;
 }
 .btn--stripe:hover {
-  background-color: #666;
+  background-color: #00C6D7;
   color: #fff;
   border-color: #000;
 }
@@ -1691,3 +1711,99 @@ blockquote {
 .btn--radius {
   border-radius: 36px;
 }
+
+/*--------- svg -------text*/
+
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carousel {
+  width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.carousel.dragging {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.carousel--wrap {
+  white-space: nowrap;
+}
+.carousel--item {
+  display: inline-block;
+  width: 30vw;
+  padding: 3vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.carousel--item figure {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.carousel--item figure img {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  transform-origin: center;
+}
+.carousel--item h2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.8vw;
+  font-size: 6vw;
+  bottom: 1vw;
+  color: #fff;
+}
+.carousel--progress {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+  bottom: 2vw;
+  width: 20vw;
+  left: 3vw;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.carousel--progress-bar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+}
+
+@font-face {
+
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel{
+    transform: scale(3.5)
+  }
+  }
+
+
+
+ 
