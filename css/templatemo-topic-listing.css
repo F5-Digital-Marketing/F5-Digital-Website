@@ -46,19 +46,20 @@
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
-  width: 100VW;
+  width: 100%;
   overflow-x: hidden;
+  -webkit-overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 8px;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #212134;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background: #00C6D7
 }
@@ -217,7 +218,6 @@ hr{
   border-radius: 60px 60px 0 0;
   padding-bottom: 100px;
   gap: 100px;
-
 }
 
 

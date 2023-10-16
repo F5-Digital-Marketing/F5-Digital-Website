@@ -50,4 +50,19 @@
   
   })(window.jQuery);
 
+ // NO-SCROOL-X
+  function wheel(e) {
+    console.log(e);
+    if ( e.wheelDeltaX !== 0 ) {
+        e.preventDefault();
+    }
+};
 
+function disable_scroll() {
+    if ( window.addEventListener ) {
+        window.addEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = wheel;
+};
+
+disable_scroll();
