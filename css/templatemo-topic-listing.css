@@ -99,7 +99,7 @@ h2 {
 
 h3 {
   font-size: var(--h3-font-size);
-  background: linear-gradient(to right, #00ffe3 20%, #4e90e0 80%, 10%, #4e90e0 80%);
+  background: linear-gradient(to right, #00C6D7 20%, #4e90e0 80%, 10%, #4e90e0 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
@@ -217,25 +217,51 @@ hr{
   border-radius: 60px 60px 0 0;
   padding-bottom: 100px;
   gap: 100px;
+
 }
 
 
 .section-bg {
+    background-image: url('../images/bg-entrega.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+    height: max-content;
+    padding-top: 250px;
+    padding-bottom: 150px;
+  }
+  @media screen and (max-width: 991px){
+    .section-bg {
+      background-image: url('../images/bg-entrega.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      background-color: var(--dark-color);
+      position: relative;
+      overflow: hidden;
+    }
+    
+  }
+  @media screen and (max-width: 480px) {
+    .section-bg {
+      background-image: url('../images/bg-entrega.jpg');
+      background-repeat: no-repeat;
+      background-position: right -59rem bottom 0rem; 
+      background-size: cover;
+      position: relative;
+      background-color: var(--dark-color);
+      position: relative;
+      overflow: hidden;
+    }
+  }
 
-
-}
 .section-bg-2{
   background-color: var(--dark-color);
-}
-
-.section-bg-3 {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: repeat;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 3000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%223000%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v3000H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%230e2134%22 d=%22M0 0h2000v3000H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%2309a5b1%22 stroke-width=%22.6%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M222 0h111v111H222zM555 0h111v111H555zM777 0h111v111H777z%22%2F%3E%3Cpath fill=%22%2309a5b1d9%22 d=%22M999 0h111v111H999z%22%2F%3E%3Cpath fill=%22%2309a5b137%22 d=%22M1332 0h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1443 0h111v111h-111zM1554 0h111v111h-111zM111 111h111v111H111z%22%2F%3E%3Cpath fill=%22%2309a5b1d0%22 d=%22M888 111h111v111H888z%22%2F%3E%3Cpath fill=%22%2309a5b1f4%22 d=%22M1332 111h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1443 111h111v111h-111zM0 222h111v111H0zM333 222h111v111H333zM666 222h111v111H666z%22%2F%3E%3Cpath fill=%22%2309a5b138%22 d=%22M1554 222h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 333h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1b7%22 d=%22M1776 333h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M555 444h111v111H555zM1554 444h111v111h-111zM1665 444h111v111h-111zM0 555h111v111H0zM111 555h111v111H111zM999 555h111v111H999zM1110 555h111v111h-111zM1776 555h111v111h-111zM1887 555h111v111h-111zM0 666h111v111H0z%22%2F%3E%3Cpath fill=%22%2309a5b116%22 d=%22M111 666h111v111H111z%22%2F%3E%3Cpath fill=%22%2309a5b162%22 d=%22M222 666h111v111H222z%22%2F%3E%3Cpath fill=%22none%22 d=%22M555 666h111v111H555zM666 666h111v111H666zM777 666h111v111H777z%22%2F%3E%3Cpath fill=%22%2309a5b14c%22 d=%22M1110 666h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1665 666h111v111h-111zM1776 666h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1fb%22 d=%22M1887 666h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b141%22 d=%22M666 777h111v111H666z%22%2F%3E%3Cpath fill=%22none%22 d=%22M777 777h111v111H777zM888 777h111v111H888zM999 777h111v111H999zM1221 777h111v111h-111zM111 888h111v111H111z%22%2F%3E%3Cpath fill=%22%2309a5b152%22 d=%22M777 888h111v111H777z%22%2F%3E%3Cpath fill=%22none%22 d=%22M999 888h111v111H999z%22%2F%3E%3Cpath fill=%22%2309a5b1ad%22 d=%22M1221 888h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1c9%22 d=%22M1665 888h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b193%22 d=%22M1887 888h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M333 999h111v111H333z%22%2F%3E%3Cpath fill=%22%2309a5b193%22 d=%22M777 999h111v111H777z%22%2F%3E%3Cpath fill=%22%2309a5b1f4%22 d=%22M1110 999h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1a8%22 d=%22M1221 999h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1443 999h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b129%22 d=%22M1887 999h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b101%22 d=%22M222 1110h111v111H222z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1332 1110h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1b5%22 d=%22M1443 1110h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1665 1110h111v111h-111zM333 1221h111v111H333zM555 1221h111v111H555zM333 1332h111v111H333z%22%2F%3E%3Cpath fill=%22%2309a5b106%22 d=%22M666 1332h111v111H666z%22%2F%3E%3Cpath fill=%22none%22 d=%22M999 1332h111v111H999zM1554 1332h111v111h-111zM1776 1332h111v111h-111zM555 1443h111v111H555z%22%2F%3E%3Cpath fill=%22%2309a5b1f3%22 d=%22M888 1443h111v111H888z%22%2F%3E%3Cpath fill=%22%2309a5b1d3%22 d=%22M1443 1443h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b15a%22 d=%22M1554 1443h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 1443h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1ca%22 d=%22M0 1554h111v111H0z%22%2F%3E%3Cpath fill=%22%2309a5b145%22 d=%22M222 1554h111v111H222z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 1554h111v111H444zM555 1554h111v111H555zM666 1554h111v111H666zM777 1554h111v111H777zM888 1554h111v111H888zM1110 1554h111v111h-111zM0 1665h111v111H0zM222 1665h111v111H222zM888 1665h111v111H888zM999 1665h111v111H999z%22%2F%3E%3Cpath fill=%22%2309a5b1f3%22 d=%22M1110 1665h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 1665h111v111h-111zM1776 1665h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b141%22 d=%22M999 1776h111v111H999z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1221 1776h111v111h-111zM1332 1776h111v111h-111zM1443 1776h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b15e%22 d=%22M1554 1776h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1fd%22 d=%22M1887 1776h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1ce%22 d=%22M666 1887h111v111H666z%22%2F%3E%3Cpath fill=%22%2309a5b1b8%22 d=%22M1332 1887h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1a1%22 d=%22M1443 1887h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1665 1887h111v111h-111zM111 1998h111v111H111z%22%2F%3E%3Cpath fill=%22%2309a5b15a%22 d=%22M444 1998h111v111H444z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1443 1998h111v111h-111zM1554 1998h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b192%22 d=%22M1665 1998h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 1998h111v111h-111zM222 2109h111v111H222zM555 2109h111v111H555zM999 2109h111v111H999zM444 2220h111v111H444z%22%2F%3E%3Cpath fill=%22%2309a5b13c%22 d=%22M555 2220h111v111H555z%22%2F%3E%3Cpath fill=%22none%22 d=%22M777 2220h111v111H777z%22%2F%3E%3Cpath fill=%22%2309a5b1ee%22 d=%22M888 2220h111v111H888z%22%2F%3E%3Cpath fill=%22%2309a5b127%22 d=%22M1443 2220h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 2220h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1cd%22 d=%22M1887 2220h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M111 2331h111v111H111zM1110 2331h111v111h-111zM1221 2331h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b10b%22 d=%22M1443 2331h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 2442h111v111H0z%22%2F%3E%3Cpath fill=%22%2309a5b142%22 d=%22M333 2442h111v111H333z%22%2F%3E%3Cpath fill=%22%2309a5b16f%22 d=%22M444 2442h111v111H444z%22%2F%3E%3Cpath fill=%22none%22 d=%22M999 2442h111v111H999zM1221 2442h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b173%22 d=%22M1776 2442h111v111h-111z%22%2F%3E%3Cpath fill=%22none%22 d=%22M777 2553h111v111H777zM1443 2553h111v111h-111zM1554 2553h111v111h-111zM222 2664h111v111H222zM444 2664h111v111H444z%22%2F%3E%3Cpath fill=%22%2309a5b1d8%22 d=%22M666 2664h111v111H666z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 2775h111v111H444z%22%2F%3E%3Cpath fill=%22%2309a5b1bb%22 d=%22M1221 2775h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b123%22 d=%22M888 2886h111v111H888z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1110 2886h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b1c4%22 d=%22M1221 2886h111v111h-111z%22%2F%3E%3Cpath fill=%22%2309a5b13e%22 d=%22M444 2997h111v111H444z%22%2F%3E%3Cpath fill=%22%2309a5b119%22 d=%22M888 2997h111v111H888z%22%2F%3E%3Cpath fill=%22%2309a5b108%22 d=%22M1110 2997h111v111h-111z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
-
 }
 
 .section-overlay {
@@ -249,13 +275,19 @@ hr{
   opacity: 1.0;
 }
 .section-overlay-2 {
-  background: radial-gradient(ellipse at 51% 60%,#0d0a199d,#0a0e1a, #0a0e1a);
+
+  background: radial-gradient(ellipse at 51% 60%,#0d0a199d,#00020e, #00020e);
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   width: 100%;
   height: 100%;
+  opacity: 1;
+}
+.section-overlay-3 {
+  background: radial-gradient(ellipse at 51% 60%,#0d0a199d,#00020e, #00020e);
+  position: absolute;
   opacity: 1;
 }
 
@@ -265,7 +297,6 @@ hr{
 }
 
 .tab-content {
-  background-color: var(--dark-color);
   border-radius: var(--border-radius-medium);
 }
 
@@ -590,7 +621,7 @@ hr{
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/Prancheta 1.png');
+  background-image: url('../images/BG-999.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -601,6 +632,33 @@ hr{
   height: max-content;
   padding-top: 250px;
   padding-bottom: 150px;
+}
+@media screen and (max-width: 991px){
+  .hero-section {
+    background-image: url('../images/991x800.jpg');
+    background-repeat: no-repeat;
+    background-position: right 0em bottom 0rem; 
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background-image: url('../images/991x800.jpg');
+    background-repeat: no-repeat;
+    background-position: right -5em bottom 0rem; 
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+
+
 }
 
 .hero-section .input-group {
