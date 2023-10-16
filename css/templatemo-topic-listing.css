@@ -261,7 +261,17 @@ hr{
   }
 
 .section-bg-2{
+  background-image: url('../images/bg-pilares.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   background-color: var(--dark-color);
+  position: relative;
+  overflow: hidden;
+  height: max-content;
+  padding-top: 250px;
+  padding-bottom: 150px;
 }
 
 .section-overlay {
