@@ -635,10 +635,10 @@ hr{
 }
 @media screen and (max-width: 991px){
   .hero-section {
-    background-image: url('../images/991x800.jpg');
+    background-image: url('../images/BG-999.jpg');
     background-repeat: no-repeat;
-    background-position: right 0em bottom 0rem; 
-    background-size: cover;
+    background-position: right -20em bottom -11rem; 
+    background-size: auto;
     position: relative;
     background-color: var(--dark-color);
     position: relative;
