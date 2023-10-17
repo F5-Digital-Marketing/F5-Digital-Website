@@ -443,22 +443,59 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section-padding">
             <div class="container">
-                <div class="col-lg-8 col-12 m-auto">
+                <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <h6 class="mb-4">Dê um f5 para o <b>futuro!</b></h6>
                         <h2 class="mb-4 text-white">Solicite um orçamento</b></h2>
                         </p>
                     </div>
-                    <div class="d-flex-1">
-                        <a href="https://api.whatsapp.com/send/?phone=5545998294838&text&type=phone_number&app_absent=0">
-                        <dotlottie-player
-                            src="https://lottie.host/338f5c17-0be6-495d-9713-9de918258a94/ijMuQrgBrr.lottie"
-                            background="transparent" speed="1.9" style="width: 500px; height: 500px" direction="1"
-                            mode="normal" loop autoplay></dotlottie-player>
-                        </a>    
-                        </div>
+                    <div class="col-lg-6 col-12">
+                        <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="name form-control" placeholder="Name" required="">
+                                        
+                                        <label for="floatingInput">Nome</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12"> 
+                                    <div class="form-floating">
+                                        <input type="Number" name="Telefone" id="number" pattern="[^ @]*@[^ @]*" class="number form-control" placeholder="(DDD) + Número" required="">
+                                        
+                                        <label for="floatingInput">WhatsApp</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" id="name" class="subject form-control" placeholder="Name" required="">
+                                        
+                                        <label for="floatingInput">Assunto</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <textarea class="message form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
+                                        
+                                        <label for="floatingTextarea">Conte um pouco da sua ideia</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto justify-content-center">
+                                                                
+                                    <dotlottie-player class="lottiescale" type="submit" onclick="sendwhatsapp();"
+                                    src="https://lottie.host/338f5c17-0be6-495d-9713-9de918258a94/ijMuQrgBrr.lottie"
+                                    background="transparent" speed="1.9" style="width: 200px; height: 200px" direction="1"
+                                    mode="normal" loop autoplay>
+                                    </dotlottie-player>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
             </div>
@@ -652,6 +689,26 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function sendwhatsapp(){
+         var phonenumber = "+5545998294838";
+  
+         var  name = document.querySelector(".name").value;
+         var number = document.querySelector(".number").value;
+         var subject = document.querySelector(".subject").value;
+         var message = document.querySelector(".message").value;
+  
+         
+  
+         var url = "https://wa.me/" + phonenumber + "?text="
+         +"*Gostaria de orçar um:*%20"+subject+"%0a%0a"
+         +"*Me chamo :* "+name+"%0a"
+         +"*Contato:* "+number+"%0a"
+         +"*Observações :* "+message+"%0a"         
+  
+         window.open(url, '_blank').focus();
+       }
+      </script>
 
 </body>
 

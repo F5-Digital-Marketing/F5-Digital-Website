@@ -1219,6 +1219,7 @@ blockquote {
   padding-left: 20px;
 }
 
+/*
 .custom-form button[type="submit"] {
   background: var(--custom-btn-bg-color);
   border: none;
@@ -1229,11 +1230,13 @@ blockquote {
   font-weight: var(--font-weight-semibold);
   transition: all 0.3s;
   margin-bottom: 0;
-}
+}*/
+
 
 .custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
+.custom-form button[type="submit"]:focus
+.custom-form button[type="submit"]:active {
+  background: var(--dark-color);
   border-color: transparent;
 }
 
@@ -1356,6 +1359,10 @@ blockquote {
 }
 .lottiediv{
   padding: auto;
+}
+.lottiescale{
+  display: flex;
+  transform: scale(1.8);
 }
 
 

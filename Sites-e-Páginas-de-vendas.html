@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <section class="section-bg-2 section-padding featured-section-3">
+        <section class="section-padding featured-section-3">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-12 text-center">
@@ -184,15 +184,13 @@
         </section>
         <section class="topics-detail-section" id="topics-detail">
             <div class="container">
-                <div class="col-lg-8 col-12 m-auto">
-                    <blockquote>
-                        <h4>Vamos criar uma experiência digital incrível e personalizada que fará sua marca irá se
+                <div class="col-lg-8 col-12 text-center m-auto">
+                        <h3>Vamos criar uma experiência digital incrível e personalizada que fará sua marca irá se
                             destacar
-                            em meio à concorrência.</h4>
-                    </blockquote>
+                            em meio à concorrência.</h3>
                 </div>
             </div>
-            <section class="section-padding section-bg">
+            <section class="section-padding">
                 <div class="container">
                     <div class="col-lg-12 col-12 text-center">
                         <h3 class="mb-4">Projetos</h3>
@@ -309,20 +307,53 @@
         <section class="section-padding">
             <div class="container">
                 <div class="row justify-content-center">
-
-                    <div class="col-lg-5 col-12">
-                        <img src="images/rear-view-young-college-student.jpg" class="newsletter-image img-fluid" alt="">
+                    <div class="col-12 text-center">
+                        <h6 class="mb-4">Dê um f5 para o <b>futuro!</b></h6>
+                        <h2 class="mb-4 text-white">Solicite um orçamento</b></h2>
+                        </p>
                     </div>
+                    <div class="col-lg-6 col-12">
+                        <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="name form-control" placeholder="Name" required="">
+                                        
+                                        <label for="floatingInput">Nome</label>
+                                    </div>
+                                </div>
 
-                    <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
-                        <form class="custom-form subscribe-form" action="#" method="post" role="form">
-                            <h4 class="mb-4 pb-2">Faça um orçamento</h4>
+                                <div class="col-lg-6 col-md-6 col-12"> 
+                                    <div class="form-floating">
+                                        <input type="Number" name="Telefone" id="number" pattern="[^ @]*@[^ @]*" class="number form-control" placeholder="(DDD) + Número" required="">
+                                        
+                                        <label for="floatingInput">WhatsApp</label>
+                                    </div>
+                                </div>
 
-                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
-                                class="form-control" placeholder="Email Address" required="">
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" id="name" class="subject form-control" placeholder="Name" required="">
+                                        
+                                        <label for="floatingInput">Assunto</label>
+                                    </div>
 
-                            <div class="col-lg-12 col-12">
-                                <button type="submit" class="form-control">Subscribe</button>
+                                    <div class="form-floating">
+                                        <textarea class="message form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
+                                        
+                                        <label for="floatingTextarea">Conte um pouco da sua ideia</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto justify-content-center">
+                                                                
+                                    <dotlottie-player class="lottiescale" type="submit" onclick="sendwhatsapp();"
+                                    src="https://lottie.host/338f5c17-0be6-495d-9713-9de918258a94/ijMuQrgBrr.lottie"
+                                    background="transparent" speed="1.9" style="width: 200px; height: 200px" direction="1"
+                                    mode="normal" loop autoplay>
+                                    </dotlottie-player>
+                                </div>
+
                             </div>
                         </form>
                     </div>
@@ -330,6 +361,26 @@
                 </div>
             </div>
         </section>
+        <script>
+            function sendwhatsapp(){
+             var phonenumber = "+5545998294838";
+      
+             var  name = document.querySelector(".name").value;
+             var number = document.querySelector(".number").value;
+             var subject = document.querySelector(".subject").value;
+             var message = document.querySelector(".message").value;
+      
+             
+      
+             var url = "https://wa.me/" + phonenumber + "?text="
+             +"*Gostaria de orçar um:*%20"+subject+"%0a%0a"
+             +"*Me chamo :* "+name+"%0a"
+             +"*Contato:* "+number+"%0a"
+             +"*Observações :* "+message+"%0a"         
+      
+             window.open(url, '_blank').focus();
+           }
+          </script>
     </main>
 
     <footer class="site-footer section-padding footer-p">
