@@ -37,7 +37,7 @@
 
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    <link href="css\main-f5.css" rel="stylesheet">
 </head>
 
 <body id="projetospg">
@@ -324,10 +324,17 @@
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12"> 
-                                    <div class="form-floating">
-                                        <input type="Number" name="Telefone" id="number" pattern="[^ @]*@[^ @]*" class="number form-control" placeholder="(DDD) + Número" required="">
+                                    <div class="form-floating">      
+                                                               
+                                        <select name="serviço" class="serviço form-control form-select" style="height: 55px;" for="floatingInput">
+                                           s
+                                            <option value="Quero um site">Quero um site</option>
+                                            <option value="Anúncios">Anúncios</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Quero vender mais">Quero vender mais</option>
+                                            
+                                        </select>
                                         
-                                        <label for="floatingInput">WhatsApp</label>
                                     </div>
                                 </div>
 
@@ -337,6 +344,7 @@
                                         
                                         <label for="floatingInput">Assunto</label>
                                     </div>
+                                    
 
                                     <div class="form-floating">
                                         <textarea class="message form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
@@ -345,9 +353,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-12 ms-auto justify-content-center">
-                                                                
-                                    <dotlottie-player class="lottiescale" type="submit" onclick="sendwhatsapp();"
+                                <div class="col-lg-4 col-12 ms-auto justify-content-center">                        
+                                    <dotlottie-player class="button lottiescale" type="submit" onclick="sendwhatsapp();"
                                     src="https://lottie.host/338f5c17-0be6-495d-9713-9de918258a94/ijMuQrgBrr.lottie"
                                     background="transparent" speed="1.9" style="width: 200px; height: 200px" direction="1"
                                     mode="normal" loop autoplay>
@@ -366,17 +373,17 @@
              var phonenumber = "+5545998294838";
       
              var  name = document.querySelector(".name").value;
-             var number = document.querySelector(".number").value;
+             var serviço  = document.querySelector(".serviço").value;
              var subject = document.querySelector(".subject").value;
              var message = document.querySelector(".message").value;
       
              
       
              var url = "https://wa.me/" + phonenumber + "?text="
-             +"*Gostaria de orçar um:*%20"+subject+"%0a%0a"
+             +"*Gostaria de orçar um:*%20"+serviço+"%0a%0a"
+             +"*Observações :* "+message+"%0a"
              +"*Me chamo :* "+name+"%0a"
-             +"*Contato:* "+number+"%0a"
-             +"*Observações :* "+message+"%0a"         
+                     
       
              window.open(url, '_blank').focus();
            }

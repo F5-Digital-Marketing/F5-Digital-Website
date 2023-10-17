@@ -778,7 +778,17 @@ hr{
 }
 @media screen and (max-width: 991px) {
   .custom-block-overlay {
-    height: 240px;
+    height: 300px;
+  } 
+  
+}
+
+.custom-block-overlay-1 {
+  height: 250px;
+}
+@media screen and (max-width: 991px) {
+  .custom-block-overlay-1 {
+    height: 250px;
   } 
   
 }
@@ -1207,7 +1217,7 @@ blockquote {
 -----------------------------------------*/
 .custom-form .form-control {
   border-radius: var(--border-radius-large);
-  color: var(--p-color);
+  color: var(--custom-btn-bg-hover-color);
   margin-bottom: 24px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -1215,7 +1225,7 @@ blockquote {
   outline: none;
 }
 
-.form-floating>label {
+.form-floating>label select {
   padding-left: 20px;
 }
 
