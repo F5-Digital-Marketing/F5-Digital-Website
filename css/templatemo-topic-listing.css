@@ -12,7 +12,7 @@
   --custom-btn-bg-hover-color:    #0a0e1a;
   --dark-color:                   #0a0e1a;
   --p-color:                      #e4e4e4;
-  --p-color-2:                    #444649;
+  --p-color-2:                    #d1d1d1;
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
@@ -44,7 +44,7 @@
 }
 
 body, html {
-  background-color: var(--white-color);
+  background-color: var(--dark-color);
   font-family: var(--body-font-family);
   width: 100%;
   overflow-x: hidden;
