@@ -1368,11 +1368,14 @@ blockquote {
   color: var(--white-color);
 }
 .lottiediv{
+  margin-top: 50px;
+  z-index: -1;
   padding: auto;
 }
 .lottiescale{
+  padding-top: 17px;
   display: flex;
-  transform: scale(1.8);
+  transform: scale(3.8);
 }
 
 
