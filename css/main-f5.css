@@ -1560,6 +1560,8 @@ blockquote {
   pointer-events: none;
 }
 
+
+
 .slider > img {
   grid-area: 1/1;
   width: 100%;
@@ -1613,6 +1615,11 @@ blockquote {
 }
 
 @media screen and (max-width: 991px) {
+  .slider > img{
+    width: 520px;
+    height: 460px;
+  }
+
   .body-slider {
     margin-top: -150px;
     margin-bottom: -100px;
@@ -1622,6 +1629,11 @@ blockquote {
 }
 
 @media screen and (max-width: 480px) {
+  .slider > img{
+    width: 360px;
+    height: 260px;
+  }
+
 
 
 }
