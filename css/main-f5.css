@@ -12,7 +12,7 @@
   --custom-btn-bg-hover-color:    #0a0e1a;
   --dark-color:                   #0a0e1a;
   --p-color:                      #e4e4e4;
-  --p-color-2:                    #d1d1d1;
+  --p-color-2:                    rgb(39, 68, 80);
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
@@ -75,10 +75,9 @@ body, html {
 -----------------------------------------*/
 h1,
 h2,
-h3,
 h4,
 h5{
-  color: var(--primary-color);
+  color: var(--white-color);
   font-weight: var(--font-weight-semibold);
 
 }
