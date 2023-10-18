@@ -1217,7 +1217,7 @@ blockquote {
 -----------------------------------------*/
 .custom-form .form-control {
   border-radius: var(--border-radius-large);
-  color: var(--custom-btn-bg-hover-color);
+  color: var(--dark-color);
   margin-bottom: 24px;
   padding-top: 13px;
   padding-bottom: 13px;

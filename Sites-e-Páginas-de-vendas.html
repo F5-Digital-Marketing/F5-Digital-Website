@@ -63,19 +63,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#section_2">o que entregamos</a>
+                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#metodo">Método F5</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#section_3">Como funciona</a>
+                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#cases">Cases</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#section_4">FAQs</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#section_5">Contato</a>
+                            <a class="nav-link click-scroll" href="Sites-e-Páginas-de-vendas.html#contato">Contato</a>
                         </li>
                     </ul>
 
@@ -96,7 +92,7 @@
             </div>
         </section>
 
-        <section class="section-padding featured-section-3">
+        <section class="section-padding featured-section-3" id="metodo">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-12 text-center">
@@ -190,7 +186,7 @@
                             em meio à concorrência.</h3>
                 </div>
             </div>
-            <section class="section-padding">
+            <section class="section-padding" id="cases">
                 <div class="container">
                     <div class="col-lg-12 col-12 text-center">
                         <h3 class="mb-4">Projetos</h3>
@@ -309,55 +305,7 @@
 
 
 
-        <section>
-            <div class="col-12 text-center">
-                <h6 class="mb-4">Dê um f5 para o <b>futuro!</b></h6>
-                <h2 class="mb-4 text-white">Solicite um orçamento</b></h2>
-                </p>
-            </div>
-            <div id="booking" class="section">
-                <div class="section-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="booking-form">
-                                <form>
-                                    <div class="form-group"> <input class="form-control" type="text" placeholder="Nome completo">
-                                        <span class="form-label">Nome completo</span> </div>
-
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <select class="form-control" required> <option value="" selected hidden>no of rooms</option> <option>1</option> <option>2</option> <option>3</option> </select>
-                                                <span class="select-arrow"></span> <span class="form-label">Rooms</span> </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <select class="form-control" required> <option value="" selected hidden>no of adults</option> <option>1</option> <option>2</option> <option>3</option> </select>
-                                                <span class="select-arrow"></span> <span class="form-label">Adults</span> </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email">
-                                                <span class="form-label">Email</span> </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group"> <input class="form-control" type="tel" placeholder="Enter you Phone">
-                                                <span class="form-label">Phone</span> </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="section-padding">
+        <section id="contato">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -377,37 +325,46 @@
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12"> 
-                                    <div class="form-floating">      
-                                                               
-                                        <select name="serviço" class="serviço form-control form-select" style="height: 55px;" for="floatingInput">
-                                           s
-                                            <option value="Quero um site">Quero um site</option>
-                                            <option value="Anúncios">Anúncios</option>
-                                            <option value="Marketing">Marketing</option>
-                                            <option value="Quero vender mais">Quero vender mais</option>
-                                            
-                                        </select>
+                                    <div class="form-floating">
+                                        <input type="Number" name="Telefone" id="number" pattern="[^ @]*@[^ @]*" class="number form-control" placeholder="(DDD) + Número" required="">
                                         
+                                        <label for="floatingInput">WhatsApp</label>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-12">
-                                    <div class="form-floating">
-                                        <input type="text" name="subject" id="name" class="subject form-control" placeholder="Name" required="">
-                                        
-                                        <label for="floatingInput">Assunto</label>
+                           
+                                        <div class="form-group">
+                                            <select class="service form-control" required> 
+                                                <option value="" selected hidden>Serviços</option>
+                                                <option value="Quero um site para a minha empresa">Quero um site para a minha empresa</option>
+                                                <option value="Site para meus serviços">Sou prestador de serviço e quero ter um site</option>
+                                                <option value="Landing Page para infoproduto">Sou Infoprodutor e quero uma Landing Page</option>
+
+                                                
+                                            </select>
+                                            <span class="select-arrow"></span> <span class="form-label"></span> </div>
+                                 
+  
+                                    <div class="">
+                                        <div class="form-group">
+                                            <select class="budget form-control" required> <option value="" selected hidden>Orçamento para o projeto</option> 
+                                                <option value="800,00 a 1.700,00">800,00 a 1.700,00</option> <option value="1.700,00 a 2.500,00">1.700,00 a 2.500,00
+                                                </option> <option value="2.500,00 a 7.000,00">2.500,00 a 7.000,00</option> </select>
+                                            <span class="select-arrow"></span> <span class="form-label"></span> </div>
                                     </div>
-                                    
+
 
                                     <div class="form-floating">
                                         <textarea class="message form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
                                         
-                                        <label for="floatingTextarea">Conte um pouco da sua ideia</label>
+                                        <label for="floatingTextarea">Conte um pouco da sua ideia ou deixe links de referência</label>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-12 ms-auto justify-content-center">                        
-                                    <dotlottie-player class="button lottiescale" type="submit" onclick="sendwhatsapp();"
+                                <div class="col-lg-4 col-12 ms-auto justify-content-center">
+                                                                
+                                    <dotlottie-player class="lottiescale" type="submit" onclick="sendwhatsapp();"
                                     src="https://lottie.host/338f5c17-0be6-495d-9713-9de918258a94/ijMuQrgBrr.lottie"
                                     background="transparent" speed="1.9" style="width: 200px; height: 200px" direction="1"
                                     mode="normal" loop autoplay>
@@ -420,27 +377,9 @@
 
                 </div>
             </div>
-        </section>
-        <script>
-            function sendwhatsapp(){
-             var phonenumber = "+5545998294838";
-      
-             var  name = document.querySelector(".name").value;
-             var serviço  = document.querySelector(".serviço").value;
-             var subject = document.querySelector(".subject").value;
-             var message = document.querySelector(".message").value;
-      
-             
-      
-             var url = "https://wa.me/" + phonenumber + "?text="
-             +"*Gostaria de orçar um:*%20"+serviço+"%0a%0a"
-             +"*Observações :* "+message+"%0a"
-             +"*Me chamo :* "+name+"%0a"
-                     
-      
-             window.open(url, '_blank').focus();
-           }
-          </script>
+            </section>
+
+        
     </main>
 
     <footer class="site-footer section-padding footer-p">
@@ -497,6 +436,29 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function sendwhatsapp(){
+         var phonenumber = "+5545998294838";
+  
+         var  name = document.querySelector(".name").value;
+         var number = document.querySelector(".number").value;
+         var service = document.querySelector(".service").value;
+         var budget = document.querySelector(".budget").value;
+         var message = document.querySelector(".message").value;
+  
+         
+  
+         var url = "https://wa.me/" + phonenumber + "?text="
+         +"*Me chamo :* "+name+"%0a"
+         +"*Contato:* "+number+"%0a"
+         +"*Serviços:* "+service+"%0a"
+         +"*Orçamento:* "+budget+"%0a"
+
+         +"*Observações :* "+message+"%0a"         
+  
+         window.open(url, '_blank').focus();
+       }
+      </script>
 
 </body>
 
