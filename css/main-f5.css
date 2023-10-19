@@ -12,7 +12,7 @@
   --custom-btn-bg-hover-color:    #0a0e1a;
   --dark-color:                   #0a0e1a;
   --p-color:                      #e4e4e4;
-  --p-color-2:                    rgb(39, 68, 80);
+  --p-color-2:                    rgb(221, 229, 233);
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
@@ -118,7 +118,7 @@ h5 {
 }
 
 h6 {
-  color: var(--primary-color);
+  color: var(--white-color);
   font-size: var(--h6-font-size);
 }
 
@@ -128,10 +128,6 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
   line-height: 1.8;
-}
-.pc-2{
-  color: var(--p-color-2) !important;
-
 }
 
 .footer-p{
@@ -189,8 +185,8 @@ hr{
 }
 
 .section-padding-LD {
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 250px;
+  padding-left: 250px;
   padding-bottom: 50px;
 }
 .section-padding-LD-2 {
@@ -198,6 +194,20 @@ hr{
   padding-left: 50px;
   padding-bottom: 50px;
 }
+.section-padding-LD-3 {
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-bottom: 50px;
+  padding-top: 150px;
+}
+@media screen and (max-width: 991px){
+  .section-padding-LD-3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+}
+
 
 #section_1{
   border-radius: 0 0 60px 60px;
