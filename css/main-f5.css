@@ -133,6 +133,7 @@ p {
   color: var(--p-color-2) !important;
 
 }
+
 .footer-p{
   font-size: 8px !important;
 }
@@ -273,6 +274,82 @@ hr{
   padding-top: 250px;
   padding-bottom: 150px;
 }
+
+.section-bg-faq {
+  background-image: url('../images/bg-faq.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: var(--dark-color);
+  position: relative;
+  overflow: hidden;
+  height: max-content;
+}
+@media screen and (max-width: 991px){
+  .section-bg-faq {
+    background-image: url('../images/bg-faq.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .section-bg-faq {
+    background-image: url('../images/bg-faq.jpg');
+    background-repeat: no-repeat;
+    background-position: right -99rem bottom 0rem; 
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.section-bg-pilar {
+  background-image: url('../images/bg-pilares-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: var(--dark-color);
+  position: relative;
+  overflow: hidden;
+  height: max-content;
+}
+@media screen and (max-width: 991px){
+  .section-bg-pilar {
+    background-image: url('../images/bg-pilares-2.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .section-bg-pilar {
+    background-image: url('../images/bg-pilares-2.jpg');
+    background-repeat: no-repeat;
+    background-position: right -130rem bottom 0rem; 
+    background-size: cover;
+    position: relative;
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+
 
 .section-overlay {
   background: radial-gradient(circle at 0% 61%,#0b0518, #0b1225, #12042957);
@@ -728,6 +805,7 @@ hr{
 }
 
 .custom-block {
+
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -737,7 +815,7 @@ hr{
 }
 
 .custom-block:hover {
-  background-color: var(--secondary-color);
+  border: solid 1px #00c5d757;
   transform: translateY(-3px);
 }
 
