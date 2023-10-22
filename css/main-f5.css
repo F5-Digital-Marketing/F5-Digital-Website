@@ -173,7 +173,59 @@ strong{
 hr{
   color: var(--custom-btn-bg-color);
 }
+.custom-h1{
+  padding-left: 70px;
+  padding-right: 70px;
 
+}
+@media screen and (max-width: 1920px){
+  .custom-h1 {
+    padding-right: 40px;
+    padding-left: 40px;
+    
+  }
+}
+@media screen and (max-width: 1200px){
+  .custom-h1 {
+    padding-right: 1px;
+    padding-left: 1px;
+    
+  }
+}
+@media screen and (max-width: 991px){
+  .custom-h1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+}
+.custom-p{
+  padding-left: 180px;
+  padding-right: 180px;
+
+}
+
+@media screen and (max-width: 1200px){
+  .custom-p {
+    padding-right: 40px;
+    padding-left: 40px;
+    
+  }
+}
+@media screen and (max-width: 991px){
+  .custom-p {
+    padding-right: 80px;
+    padding-left: 80px;
+    
+  }
+}
+@media screen and (max-width: 550px){
+  .custom-p {
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+}
 
 
 /*---------------------------------------
@@ -1993,13 +2045,13 @@ blockquote {
     align-self: center;
   border: none;
   cursor: pointer;
-  background-color: #102770;
-  color: #ffeba7;
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: var(--custom-btn-bg-color);
+  color: var(--dark-color);
+  box-shadow: 0 -1px 18px 0 var(--custom-btn-bg-color);
 }
 .modal-btn:not(:checked) + label:hover{
-  background-color: #ffeba7;
-  color: #102770;
+  background-color: var(--dark-color);;
+  color:  var(--custom-btn-bg-color);
 }
 .modal-btn:checked + label .uil,
 .modal-btn:not(:checked) + label .uil{
