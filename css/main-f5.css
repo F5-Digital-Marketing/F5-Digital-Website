@@ -11,8 +11,8 @@
   --custom-btn-bg-color:          #00C6D7;
   --custom-btn-bg-hover-color:    #0a0e1a;
   --dark-color:                   #0a0e1a;
-  --p-color:                      #e4e4e4;
-  --p-color-2:                    rgb(221, 229, 233);
+  --p-color:                      #f7f7f7;
+  --p-color-2:                    #ffffff;
   --border-color:                 #7fffd4;
   --link-hover-color:             #13547a;
 
@@ -247,10 +247,25 @@ hr{
   padding-bottom: 50px;
 }
 .section-padding-LD-3 {
-  padding-right: 300px;
-  padding-left: 300px;
+  padding-right: 600px;
+  padding-left: 600px;
   padding-bottom: 50px;
   padding-top: 150px;
+}
+
+@media screen and (max-width: 1920px){
+  .section-padding-LD-3{
+    padding-right: 400px;
+    padding-left: 400px;
+    
+  }
+}
+@media screen and (max-width: 1500px){
+  .section-padding-LD-3 {
+    padding-right: 120px;
+    padding-left: 120px;
+    
+  }
 }
 @media screen and (max-width: 991px){
   .section-padding-LD-3 {
@@ -259,6 +274,7 @@ hr{
     padding-top: 100px;
   }
 }
+
 
 
 #section_1{
@@ -282,7 +298,14 @@ hr{
   margin-bottom: 100px;
   gap: 100px;
 }
+#navbarNav{
+  padding-left: 140px;
 
+}
+#navbarNav2{
+  padding-left: 200px;
+
+}
 
 .section-bg {
     background-image: url('../images/bg-entrega.jpg');
