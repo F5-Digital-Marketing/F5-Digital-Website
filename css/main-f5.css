@@ -302,6 +302,10 @@ hr{
   padding-left: 140px;
 
 }
+@media screen and (max-width: 991px){
+  #navbarNav{
+    padding-left: 20px;
+}}
 #navbarNav2{
   padding-left: 200px;
 
