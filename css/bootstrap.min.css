@@ -12549,8 +12549,8 @@ fieldset:disabled .btn {
     }
 
     .px-xxl-5 {
-        padding-right: 3rem !important;
-        padding-left: 3rem !important
+        padding-right: 150PX !important;
+        padding-left: 150px !important
     }
 
     .py-xxl-0 {
