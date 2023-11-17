@@ -365,7 +365,7 @@ hr{
 }
 
 .section-bg-faq {
-  background-image: url('../images/bg-faq.jpg');
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-faq_qsnrxu');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -377,7 +377,7 @@ hr{
 }
 @media screen and (max-width: 991px){
   .section-bg-faq {
-    background-image: url('../images/bg-faq.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-faq_qsnrxu');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -390,7 +390,7 @@ hr{
 }
 @media screen and (max-width: 480px) {
   .section-bg-faq {
-    background-image: url('../images/bg-faq.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-faq_qsnrxu');
     background-repeat: no-repeat;
     background-position: right -99rem bottom 0rem; 
     background-size: cover;
@@ -402,7 +402,7 @@ hr{
 }
 
 .section-bg-pilar {
-  background-image: url('../images/bg-pilares-2.jpg');
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-pilares-2_bzai6o');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,7 +414,7 @@ hr{
 }
 @media screen and (max-width: 991px){
   .section-bg-pilar {
-    background-image: url('../images/bg-pilares-2.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-pilares-2_bzai6o');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -427,7 +427,7 @@ hr{
 }
 @media screen and (max-width: 480px) {
   .section-bg-pilar {
-    background-image: url('../images/bg-pilares-2.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-pilares-2_bzai6o');
     background-repeat: no-repeat;
     background-position: right -130rem bottom 0rem; 
     background-size: cover;
@@ -2048,7 +2048,7 @@ blockquote {
 .modal-btn:not(:checked) + label{
   position: relative;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 2;
   height: 50px;
   transition: all 200ms linear;
