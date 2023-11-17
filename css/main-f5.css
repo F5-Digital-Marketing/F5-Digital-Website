@@ -312,7 +312,7 @@ hr{
 }
 
 .section-bg {
-    background-image: url('../images/bg-entrega.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/w6etk9k0wltdj3oujazp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -326,7 +326,7 @@ hr{
   }
   @media screen and (max-width: 991px){
     .section-bg {
-      background-image: url('../images/bg-entrega.jpg');
+      background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/w6etk9k0wltdj3oujazp');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -339,7 +339,7 @@ hr{
   }
   @media screen and (max-width: 480px) {
     .section-bg {
-      background-image: url('../images/bg-entrega.jpg');
+      background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/w6etk9k0wltdj3oujazp');
       background-repeat: no-repeat;
       background-position: right -59rem bottom 0rem; 
       background-size: cover;
@@ -351,7 +351,7 @@ hr{
   }
 
 .section-bg-2{
-  background-image: url('../images/bg-pilares.jpg');
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/bg-pilares_mojwah');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -804,7 +804,7 @@ hr{
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/BG-999.jpg');
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/v5uojwhha3de08xgvp5y');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -818,7 +818,7 @@ hr{
 }
 @media screen and (max-width: 991px){
   .hero-section {
-    background-image: url('../images/BG-999.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/v5uojwhha3de08xgvp5y');
     background-repeat: no-repeat;
     background-position: right -20em bottom -11rem; 
     background-size: auto;
@@ -831,7 +831,7 @@ hr{
 }
 @media screen and (max-width: 480px) {
   .hero-section {
-    background-image: url('../images/991x800.jpg');
+    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/cmtlp56vuqhmncosvpwe');
     background-repeat: no-repeat;
     background-position: right -5em bottom 0rem; 
     background-size: cover;
@@ -1113,7 +1113,7 @@ blockquote {
 
 
 .timeline-section {
-  background-image: url('../images/bg-prie.jpg');
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/sgmpxpnzfzks3qevqe7o');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
