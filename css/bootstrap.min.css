@@ -783,7 +783,7 @@ progress {
 
     }
     .py-5{
-        padding-top: 3rem !important;
+        padding-top: 16rem !important;
         padding-bottom: 3rem !important
 
     }
@@ -8905,6 +8905,15 @@ fieldset:disabled .btn {
     padding-top: 1rem;
     padding-bottom: 3rem !important
 }
+.py5-1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem !important
+}
+@media screen {
+    
+}
+
+
 
 .pt-0 {
     padding-top: 0 !important

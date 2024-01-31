@@ -312,17 +312,16 @@ hr{
 }
 
 .section-bg {
-    background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/w6etk9k0wltdj3oujazp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-color: var(--dark-color);
-    position: relative;
-    overflow: hidden;
-    height: max-content;
-    padding-top: 250px;
-    padding-bottom: 150px;
+  background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/w6etk9k0wltdj3oujazp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding-top: 250px;
+  padding-bottom: 150px;
+
+
   }
   @media screen and (max-width: 991px){
     .section-bg {
@@ -452,7 +451,7 @@ hr{
 }
 .section-overlay-2 {
 
-  background: radial-gradient(ellipse at 51% 60%,#0d0a199d,#0a0e1a, #0a0e1a);
+  background: radial-gradient(ellipse at 51% 60%,#0d0a1929,#0a0e1a, #0a0e1a);
   position: absolute;
   top: 0;
   left: 0;
@@ -1320,6 +1319,7 @@ blockquote {
 /*---------------------------------------
   FAQs              
 -----------------------------------------*/
+
 .faq-section .accordion-item {
   border: 0;
 }
@@ -1345,9 +1345,6 @@ blockquote {
   line-height: 30px;
 }
 
-/*---------------------------------------
-  NEWSLETTER               
------------------------------------------*/
 .newsletter-image {
   border-radius: var(--border-radius-medium);
 }
