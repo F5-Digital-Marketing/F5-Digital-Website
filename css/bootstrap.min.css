@@ -782,8 +782,8 @@ progress {
         margin-left: calc(-.5 * var(--bs-gutter-x))
 
     }
-    .py-5{
-        padding-top: 16rem !important;
+    .py-5 {
+        padding-top: 6rem !important;
         padding-bottom: 3rem !important
 
     }
