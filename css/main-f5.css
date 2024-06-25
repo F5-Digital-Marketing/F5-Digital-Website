@@ -7,7 +7,6 @@
   --white-color:                  #e5f2fe;
   --primary-color:                #00C6D7;
   --secondary-color:              #0a0e1a;
-  --section-bg-color:             #e5f2fe;
   --custom-btn-bg-color:          #00C6D7;
   --custom-btn-bg-hover-color:    #0a0e1a;
   --dark-color:                   #0a0e1a;
@@ -20,7 +19,7 @@
   --title-font-family:            'Ubuntu', sans-serif;
   --text-font-family:             'Archivo', sans-serif;
 
-  --h1-font-size:                 46px;
+  --h1-font-size:                 44px;
   --h2-font-size:                 40px;
   --h3-font-size:                 30px;
   --h4-font-size:                 20px;
@@ -237,33 +236,39 @@ hr{
 }
 
 .section-padding-LD {
-  padding-right: 280px;
-  padding-left: 280px;
-  padding-bottom: 50px;
+  padding-right: 320px;
+  padding-left: 320px;
+  padding-bottom: 100px;
 }
 .section-padding-LD-2 {
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  padding-right: 450px;
+  padding-left: 450px;
+
 }
 .section-padding-LD-3 {
-  padding-right: 600px;
-  padding-left: 600px;
+  padding-right: 700px;
+  padding-left: 700px;
   padding-bottom: 50px;
-  padding-top: 150px;
+  padding-top: 200px;
+  align-content: center;
 }
 
 @media screen and (max-width: 1920px){
+  .section-padding-LD-2{
+    padding-right: 480px;
+    padding-left: 480px;
+    
+  }
   .section-padding-LD-3{
-    padding-right: 400px;
-    padding-left: 400px;
+    padding-right: 500px;
+    padding-left: 500px;
     
   }
 }
 @media screen and (max-width: 1500px){
   .section-padding-LD-3 {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 220px;
+    padding-left: 220px;
     
   }
 }
@@ -273,8 +278,20 @@ hr{
     padding-left: 20px;
     padding-top: 100px;
   }
+  .section-padding-LD-2 {
+    padding-right: 80px;
+    padding-left: 80px;}
 }
 
+@media screen and (max-width: 480px){
+  .section-padding-LD-2{
+    padding-right: 30px;
+    padding-left: 30px;
+    
+  }
+
+
+}
 
 
 #section_1{
@@ -333,6 +350,7 @@ hr{
       background-color: var(--dark-color);
       position: relative;
       overflow: hidden;
+      padding-top: 50px;
     }
     
   }
@@ -944,12 +962,17 @@ hr{
 @media screen and (max-width: 991px) {
 
   .custom-block{
-    padding: 100px;
+    padding: 80px;
   }
   .custom-block-overlay {
     height: 300px;
   } 
 }
+  @media screen and (min-width: 770px) {
+  .custom-block{
+    padding: 50px}}
+
+
 
 @media screen and (max-width: 471px) {
   .custom-block{
@@ -1557,7 +1580,7 @@ blockquote {
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   h2 {
@@ -1665,7 +1688,7 @@ blockquote {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   h2 {
