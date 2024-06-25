@@ -20,7 +20,7 @@
   --title-font-family:            'Ubuntu', sans-serif;
   --text-font-family:             'Heebo', sans-serif;
 
-  --h1-font-size:                 55px;
+  --h1-font-size:                 48px;
   --h2-font-size:                 42px;
   --h3-font-size:                 32px;
   --h4-font-size:                 23px;
@@ -897,7 +897,7 @@ hr{
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
-  padding: 30px;
+  padding: 50px;
   transition: all 0.3s ease;
   height: 100%;
 }
@@ -942,12 +942,22 @@ hr{
   height: 250px;
 }
 @media screen and (max-width: 991px) {
+
+  .custom-block{
+    padding: 100px;
+  }
   .custom-block-overlay {
     height: 300px;
   } 
-  
 }
 
+@media screen and (max-width: 471px) {
+  .custom-block{
+    padding: 50px;
+  }
+
+
+}
 .custom-block-overlay-1 {
   height: 250px;
 }
@@ -1420,6 +1430,8 @@ blockquote {
 .site-footer {
   border-bottom: 10px solid var(--custom-btn-bg-color);;
   position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .site-footer::after {
@@ -1531,9 +1543,7 @@ blockquote {
   color: var(--white-color);
 }
 .lottiediv{
-  margin-top: 50px;
   z-index: -1;
-  padding: auto;
 }
 .lottiescale{
   padding-top: 17px;
