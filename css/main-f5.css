@@ -18,18 +18,18 @@
 
   --body-font-family:             'Ubuntu', sans-serif;
   --title-font-family:            'Ubuntu', sans-serif;
-  --text-font-family:             'Heebo', sans-serif;
+  --text-font-family:             'Archivo', sans-serif;
 
-  --h1-font-size:                 48px;
-  --h2-font-size:                 42px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 23px;
-  --h5-font-size:                 26px;
-  --h6-font-size:                 24px;
-  --p-font-size:                  18px;
-  --menu-font-size:               14px;
-  --btn-font-size:                18px;
-  --copyright-font-size:          16px;
+  --h1-font-size:                 46px;
+  --h2-font-size:                 40px;
+  --h3-font-size:                 30px;
+  --h4-font-size:                 20px;
+  --h5-font-size:                 22px;
+  --h6-font-size:                 20px;
+  --p-font-size:                  17px;
+  --menu-font-size:               12px;
+  --btn-font-size:                15px;
+  --copyright-font-size:          11px;
 
   --border-radius-large:          100px;
   --border-radius-medium:         20px;
