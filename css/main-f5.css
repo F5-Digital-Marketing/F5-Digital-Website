@@ -451,7 +451,7 @@ hr{
 }
 .section-overlay-2 {
 
-  background: radial-gradient(ellipse at 51% 60%,#0d0a1929,#0a0e1a, #0a0e1a);
+  background: radial-gradient(ellipse at 51% 60%,#0d0a19c9,#0a0e1a, #0a0e1a);
   position: absolute;
   top: 0;
   left: 0;
@@ -808,7 +808,7 @@ hr{
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: var(--dark-color);
+  background-color: var(--dark-col or);
   position: relative;
   overflow: hidden;
   height: max-content;
