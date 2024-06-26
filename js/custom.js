@@ -67,4 +67,3 @@ function disable_scroll() {
 
 disable_scroll();
 
- // ICON-SESSION-ANIMATION-X
