@@ -1756,7 +1756,7 @@ blockquote {
 
 /* number of images*/
 .slider {
-  --d: 8s;
+  --d: 7s;
   /* duration */
   display: grid;
   overflow: hidden;
@@ -1815,6 +1815,7 @@ blockquote {
   margin-top: -200px;
   display: grid;
   place-content: center;
+  transform: scale(0.855);
 }
 
 @media screen and (max-width: 991px) {
