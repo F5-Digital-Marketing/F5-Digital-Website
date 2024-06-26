@@ -255,8 +255,8 @@ hr{
 
 @media screen and (max-width: 1920px){
   .section-padding-LD-2{
-    padding-right: 480px;
-    padding-left: 480px;
+    padding-right: 450px;
+    padding-left: 450px;
     
   }
   .section-padding-LD-3{
@@ -268,7 +268,11 @@ hr{
 @media screen and (max-width: 1500px){
   .section-padding-LD-3 {
     padding-right: 220px;
-    padding-left: 220px;
+    padding-left: 220px; 
+  }
+  .section-padding-LD-2{
+    padding-right: 300px;
+    padding-left: 300px;
     
   }
 }
@@ -837,7 +841,7 @@ hr{
   .hero-section {
     background-image: url('https://res.cloudinary.com/ditgc9poq/image/upload/f_auto,q_auto/v1/images/F5%20DIGITAL/BANNERS/v5uojwhha3de08xgvp5y');
     background-repeat: no-repeat;
-    background-position: right -20em bottom -11rem; 
+    background-position: right -28em bottom -9rem; 
     background-size: auto;
     position: relative;
     background-color: var(--dark-color);
@@ -1580,11 +1584,11 @@ blockquote {
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 44px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   h3 {
@@ -1688,11 +1692,11 @@ blockquote {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 34px;
+    font-size: 23px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   h3 {
@@ -2246,7 +2250,7 @@ blockquote {
 /* TITLE-ANIMATION */
 
 .title-word {
-  animation: color-animation 4s linear infinite;
+  animation: color-animation 2s linear infinite;
 }
 
 .title-word-1 {
@@ -2263,14 +2267,14 @@ blockquote {
 
 .title-word-3 {
   --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
+  --color-2: #00ffb3;
   --color-3: #ACCFCB;
 }
 
 .title-word-4 {
   --color-1: #3D8DAE;
-  --color-2: #DF8453;
-  --color-3: #E4A9A8;
+  --color-2: #6352ff;
+  --color-3: #a200ff;
 }
 
 @keyframes color-animation {
@@ -2282,8 +2286,6 @@ blockquote {
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
-
-/* Here are just some visual styles. 🖌 */
 
 .container-text {
   display: grid;
