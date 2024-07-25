@@ -1018,12 +1018,19 @@ opacity: 40%;
 }
 
 .custom-block-overlay-text {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
   position: absolute;
   z-index: 2;
   top: 0;
   right: 0;
   left: 0;
-  padding: 40PX;
+  padding: 80PX;
+  height: auto;
 }
 
 .social-share {
@@ -2293,13 +2300,14 @@ blockquote {
   display: grid;
   place-items: center;  
   text-align: center;
-  height: 20vh;
+  padding-bottom: 50PX  ;
 }
 
 .title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 800;
   font-size: 50px;
+  align-content: center;
   text-transform: uppercase;
 }
 
