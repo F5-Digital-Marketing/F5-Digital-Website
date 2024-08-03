@@ -1582,7 +1582,12 @@ blockquote {
 .lottiediv{
   z-index: -1;
 }
-  
+.lottiescale{
+  padding-top: 17px;
+  display: flex;
+  transform: scale(3.8);
+}
+
 
 /*---------------------------------------
   RESPONSIVE STYLES               
